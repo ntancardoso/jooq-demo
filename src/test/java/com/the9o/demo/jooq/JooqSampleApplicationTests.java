@@ -1,4 +1,4 @@
-package au.com.quikate.jooq;
+package com.the9o.demo.jooq;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
