@@ -66,7 +66,7 @@ public class CustomerController {
 
         customerDao.deleteById(id);
 
-        if (customerDao.existsById(id))
+        if (!customerDao.existsById(id))
             return ResponseEntity.ok("Deleted");
 
         return new ResponseEntity("Failed to delete", HttpStatus.INTERNAL_SERVER_ERROR);
